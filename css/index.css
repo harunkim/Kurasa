@@ -4,6 +4,7 @@ HEADER
 .header {
   background-color: #fff;
   color: #000;
+  /* box-shadow: 0 1.2rem 3.6rem rgba(0, 0, 0, 0.1); */
   /* height: 100vh; */
 }
 
@@ -12,7 +13,6 @@ HEADER
   justify-content: space-around;
   align-items: center;
   padding: 2.4rem;
-  box-shadow: 0 1.2rem 3.6rem rgba(0, 0, 0, 0.1);
 }
 
 .logo {
@@ -23,7 +23,7 @@ HEADER
 INTRO SECTION
 **************************/
 .intro-section {
-  margin: 4.8rem 0;
+  padding: 2.4rem 0;
 }
 
 .hero-heading {
@@ -32,7 +32,7 @@ INTRO SECTION
 
 .hero {
   margin: 0 auto;
-  padding: 4.8rem 2.4rem;
+  padding: 0 2.4rem 4.8rem;
   max-width: 72rem;
   display: flex;
   justify-content: center;
@@ -45,40 +45,45 @@ INTRO SECTION
   width: 100%;
 }
 
-.categories {
-  margin: 0 auto;
-  width: max-content;
-  padding: 2.4rem;
-  border-radius: 15px;
-  box-shadow: 0 1.2rem 3.6rem rgba(0, 0, 0, 0.1);
-}
-
 /**************************
 STORIES SECTION
 **************************/
+.categories {
+  margin: 0 auto;
+  width: 90%;
+  padding: 2.4rem;
+  border-radius: 15px;
+  background-color: #fff;
+  /* box-shadow: 0 1.2rem 3.6rem rgba(0, 0, 0, 0.1); */
+}
+
 .stories-section {
-  margin: 4.8rem 0;
+  padding: 2.4rem 0;
 }
 
 .stories {
-  /* margin: 0 2.4rem; */
-  padding: 1.2rem 2.4rem;
   display: grid;
-  grid-template-columns: 3fr 1fr;
-  column-gap: 1.2rem;
+  grid-template-columns: 1.5fr 1fr;
+  column-gap: 2rem;
+  padding: 4.8rem 4.8rem 0;
+  justify-content: center;
 }
 
-.recent-posts {
+/*****most read posts******/
+
+.most-read-posts {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
+/*****post cards******/
+
 .post-card-container,
 .post-card {
   height: fit-content;
-  max-width: 40rem;
-  border-radius: 15px;
+  /* max-width: 100%; */
+  border-radius: 11px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -87,14 +92,15 @@ STORIES SECTION
 }
 
 .post-card-container {
-  width: 50%;
-  margin: 2.4rem 0;
-  background-color: #f5ebf8;
+  width: 100%;
+  margin: 1.2rem 0;
+  /* background-color: #f5ebf8; */
+  background-color: #fff;
 }
 
-/* .post-card {
-  width: 100%;
-} */
+.post-card-container:first-of-type {
+  margin-top: 2.4rem;
+}
 
 .post-card-cover {
   height: 20rem;
@@ -108,6 +114,38 @@ STORIES SECTION
     url(../img/hero.jpg);
   background-position: center;
   background-size: cover;
+  transition: all 0.3s ease-in;
+}
+
+.post-card-cover:hover,
+.post-card-cover:active {
+  transform: scale(1.1);
+}
+
+.category-tag {
+  margin-bottom: 1.2rem;
+  display: flex;
+  gap: 0.4rem;
+}
+
+.tag {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #333;
+  background-color: #efefef;
+  /* border: 0.5px solid #555; */
+  border-radius: 100px;
+  font-weight: 600;
+  transition: all 0.3s ease-in;
+}
+
+.tag:hover,
+.tag:active {
+  background-color: #7d2b91;
+  color: #fff;
 }
 
 .author {
@@ -126,58 +164,172 @@ STORIES SECTION
 .post-description {
   font-size: 1.6rem;
   line-height: 1.6;
-  padding: 3.6rem 2.4rem;
+  padding: 3.6rem 2.4rem 1.2rem;
 }
 
-/* .author-x-link {
-  width: 100%;
-  padding: 0 2.4rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-} */
+.post-description::after {
+  content: "";
+  padding: 0.5rem;
+  border-bottom: 1.5px solid #ccc;
+  display: block;
+}
 
-.most-read-posts {
-  width: 90%;
+.extra-info {
+  display: flex;
+  width: 85%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.2rem 0 2.4rem;
+  /* margin-bottom: 1.6rem; */
+}
+
+.likes,
+.comment-share {
+  display: flex;
+  align-items: center;
+}
+
+.like-icon,
+.share-icon,
+.comment-icon {
+  display: inline-block;
+  padding-right: 0.6rem;
+  font-size: 2.4rem;
+  color: #777;
+  cursor: pointer;
+}
+
+.like-icon,
+.share-icon {
+  border-right: 2px solid #777;
+  margin-right: 0.6rem;
+}
+
+.likes-count,
+.comments-count {
+  font-size: 1.4rem;
+  color: #777;
+}
+
+/*****recent posts*****/
+
+.recent-posts {
+  font-size: 43.75%;
+  width: 100%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: stretch;
 }
 
-.most-read-posts-list-container {
+.recent-posts-list-container {
+  background-color: #fff;
+  border-radius: 11px;
   margin: 2.4rem 0;
-  position: relative;
+  height: 50rem;
+  overflow-y: scroll;
 }
 
-.most-read-posts-list {
-  position: absolute;
+.recent-posts-list {
   max-width: 100%;
+  padding: 1.2rem 0;
   height: fit-content;
   list-style: none;
 }
 
-.most-read-post {
-  margin-top: 2.4rem;
-  height: fit-content;
-  width: 100%;
-  border-bottom: 1px solid #333;
+.recent-post {
+  font-size: 43.75%;
+  padding: 0 1.2rem;
+  border-radius: 9px;
 }
 
-.most-read-post:first-child {
-  margin-top: 0;
-}
-
-.most-read-post-text {
+.recent-post-text {
   padding: 0 1.2rem;
   font-size: 1.4rem;
   display: block;
   line-height: 1.4;
-  margin-bottom: 1.2rem;
+  margin-bottom: 1.6rem;
 }
 
-.mrp-heading {
+.recent-post-text::after {
+  content: "";
+  padding: 1rem;
+  border-bottom: 0.5px solid #777;
+  display: block;
+}
+
+.recent-heading {
   display: block;
   font-size: 1.6rem;
   margin-bottom: 1.2rem;
+}
+
+/*******************************/
+/*FOOTER*/
+/*******************************/
+
+.footer {
+  padding: 6.4rem 0;
+  border-top: 1px solid #ccc;
+}
+
+.grid-footer {
+  justify-content: center;
+}
+
+.logo-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-logo {
+  display: block;
+  margin-bottom: 3.2rem;
+}
+
+.footer-logo .logo {
+  width: 20rem;
+}
+
+.social-links {
+  list-style: none;
+  display: flex;
+  gap: 2.4rem;
+}
+
+.social-links ion-icon {
+  font-size: 2.4rem;
+}
+
+.copyright {
+  font-size: 1.4rem;
+  line-height: 1.8;
+  color: #767676;
+  margin-top: auto;
+}
+
+.footer-heading {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 3.2rem;
+}
+
+.footer-nav {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.footer-link:link,
+.footer-link:visited {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #767676;
+  transition: all 0.3s;
+}
+
+.footer-link:hover,
+.footer-link:active {
+  color: #555;
 }

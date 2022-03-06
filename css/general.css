@@ -24,7 +24,7 @@ Paragraph default: 1.6
 
 - Tints: #7d2b91
 
-- Shades: 
+- Shades: #f5ebf8
 
 --- 03 ACCENTS
 
@@ -62,18 +62,60 @@ body {
   line-height: 1;
   font-weight: 400;
   color: #333;
+  background-color: #efefef;
+}
+
+a {
+  text-decoration: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
 
 /**************************
 GENERAL REUSABLE COMPONENTS
 **************************/
+.container {
+  max-width: 90rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  row-gap: 9.6rem;
+  column-gap: 6.4rem;
+}
+
+.grid:not(:last-child) {
+  margin-bottom: 9.6rem;
+}
+
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--4-cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.grid--center-v {
+  justify-items: center;
+}
+
 /* headings*/
 .primary-heading {
   font-size: 4.4rem;
-  margin-bottom: 2.4rem;
+  margin: 2.4rem 0;
 }
 
-.subheading {
+.subheading,
+.story-heading {
   display: block;
   font-size: 1.6rem;
   font-weight: 500;
@@ -81,6 +123,18 @@ GENERAL REUSABLE COMPONENTS
   text-transform: uppercase;
   margin-bottom: 1.6rem;
   letter-spacing: 0.75px;
+}
+
+.story-heading {
+  color: #333;
+  font-size: 2.4rem;
+  text-transform: none;
+  transition: all 0.3s ease-in;
+}
+
+.story-heading:hover,
+.story-heading:active {
+  color: #7d2b91;
 }
 
 /* nav-bar */
@@ -130,6 +184,18 @@ GENERAL REUSABLE COMPONENTS
 .btn-cta:hover,
 .btn-cta:active {
   background-color: #7d2b91;
+}
+
+.btn-story:link,
+.btn-story:visited {
+  /* border: 0.5px solid #555; */
+  background-color: #fff;
+}
+
+.btn-story:hover,
+.btn-story:active {
+  background-color: #7d2b91;
+  color: #fff;
 }
 
 /* alignment */

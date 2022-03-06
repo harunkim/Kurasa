@@ -9,14 +9,16 @@
       href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/general.css" / >
     <link rel="stylesheet" href="css/index.css" />
     <title>Kurasa &mdash; Let's read together!</title>
   </head>
   <body>
     <header class="header">
-      <div class="header-container">
-        <img src="img/kurasa_logo_med.png" alt="kurasa logo" class="logo" />
+      <div class="header-container container">
+        <a href="#"
+          ><img src="img/kurasa_logo_med.png" alt="kurasa logo" class="logo"
+        /></a>
         <nav class="main-nav">
           <ul class="main-nav-list">
             <li class="main-nav-list-item"><a href="" class="btn">Blog</a></li>
@@ -31,13 +33,16 @@
     </header>
 
     <main>
-      <section class="intro-section">
+      <section class="intro-section container">
         <div class="hero-heading">
           <h1 class="primary-heading center">New stories for you everyday!</h1>
         </div>
         <div class="hero">
           <img src="img/hero.jpg" alt="" / class="hero-img">
         </div>
+      </section>
+
+      <section class="stories-section container">
         <nav class="categories main-nav">
           <ul class="main-nav-list">
             <li class="main-nav-list-item">Categories</li>
@@ -53,119 +58,54 @@
             </li>
           </ul>
         </nav>
-      </section>
-
-      <section class="stories-section">
         <div class="stories">
-          <div class="recent-posts">
-            <p class="subheading center">recent posts</p>
+          <div class="most-read-posts">
+            <p class="subheading center">most read posts</p>
             <div class="post-card-container">
               <div class="post-card">
-                <div class="post-card-cover"></div>
+                <a href="" class="post-card-cover"></a>
                 <div class="post-description">
-                  <span class="subheading"> Story name </span>
+                  <a class="story-heading" href="#"> Story name </a>
+                  <div class="category-tag">
+                    <a class="tag tag--drama" href=""> Drama </a>
+                    <a class="tag tag--comedy" href=""> Comedy </a>
+                  </div>
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim
                   temporibus sit magni nobis nihil maiores, harum iusto optio
                   excepturi est labore earum ipsam, quos eveniet non, nam
                   expedita necessitatibus pariatur!
-                  <span class="author">&mdash; Maria Cosovo</span>
-                  <a href="" class="btn btn-cta left margin-t-sm"
-                    >Read more &rarr;</a
-                  >
                 </div>
-              </div>
-            </div>
-            <div class="post-card-container">
-              <div class="post-card">
-                <div class="post-card-cover"></div>
-                <div class="post-description">
-                  <span class="subheading"> Story name </span>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim
-                  temporibus sit magni nobis nihil maiores, harum iusto optio
-                  excepturi est labore earum ipsam, quos eveniet non, nam
-                  expedita necessitatibus pariatur!
-                  <span class="author">&mdash; Maria Cosovo</span>
-                  <a href="" class="btn btn-cta left margin-t-sm"
-                    >Read more &rarr;</a
-                  >
-                </div>
-              </div>
-            </div>
-            <div class="post-card-container">
-              <div class="post-card">
-                <div class="post-card-cover"></div>
-                <div class="post-description">
-                  <span class="subheading"> Story name </span>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim
-                  temporibus sit magni nobis nihil maiores, harum iusto optio
-                  excepturi est labore earum ipsam, quos eveniet non, nam
-                  expedita necessitatibus pariatur!
-                  <span class="author">&mdash; Maria Cosovo</span>
-                  <a href="" class="btn btn-cta left margin-t-sm"
-                    >Read more &rarr;</a
-                  >
-                </div>
-              </div>
-            </div>
-            <div class="post-card-container">
-              <div class="post-card">
-                <div class="post-card-cover"></div>
-                <div class="post-description">
-                  <span class="subheading"> Story name </span>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim
-                  temporibus sit magni nobis nihil maiores, harum iusto optio
-                  excepturi est labore earum ipsam, quos eveniet non, nam
-                  expedita necessitatibus pariatur!
-                  <span class="author">&mdash; Maria Cosovo</span>
-                  <a href="" class="btn btn-cta left margin-t-sm"
-                    >Read more &rarr;</a
-                  >
-                </div>
-              </div>
-            </div>
-            <div class="post-card-container">
-              <div class="post-card">
-                <div class="post-card-cover"></div>
-                <div class="post-description">
-                  <span class="subheading"> Story name </span>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim
-                  temporibus sit magni nobis nihil maiores, harum iusto optio
-                  excepturi est labore earum ipsam, quos eveniet non, nam
-                  expedita necessitatibus pariatur!
-                  <span class="author">&mdash; Maria Cosovo</span>
-                  <a href="" class="btn btn-cta left margin-t-sm"
-                    >Read more &rarr;</a
-                  >
-                </div>
-              </div>
-            </div>
-            <div class="post-card-container">
-              <div class="post-card">
-                <div class="post-card-cover"></div>
-                <div class="post-description">
-                  <span class="subheading"> Story name </span>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim
-                  temporibus sit magni nobis nihil maiores, harum iusto optio
-                  excepturi est labore earum ipsam, quos eveniet non, nam
-                  expedita necessitatibus pariatur!
-                  <span class="author">&mdash; Maria Cosovo</span>
-                  <a href="" class="btn btn-cta left margin-t-sm"
-                    >Read more &rarr;</a
-                  >
+                <div class="extra-info">
+                  <div class="likes">
+                    <ion-icon
+                      name="thumbs-up-sharp"
+                      class="like-icon"
+                    ></ion-icon>
+                    <p class="likes-count">100</p>
+                  </div>
+                  <div class="comment-share">
+                    <ion-icon
+                      name="share-social-sharp"
+                      class="share-icon"
+                    ></ion-icon>
+                    <ion-icon
+                      name="chatbubble-ellipses-sharp"
+                      class="comment-icon"
+                    ></ion-icon>
+                    <p class="comments-count">69</p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="most-read-posts">
-            <p class="subheading center">most read posts</p>
-            <div class="most-read-posts-list-container">
-              <ul class="most-read-posts-list">
-                <li class="most-read-post">
-                  <p class="most-read-post-text">
-                    <span class="mrp-heading"
-                      ><a href="" class="btn"
-                        >Story name (read more &rarr;)</a
-                      ></span
+          <div class="recent-posts">
+            <p class="subheading center">recent posts</p>
+            <div class="recent-posts-list-container">
+              <div class="recent-posts-list">
+                <div class="recent-post">
+                  <p class="recent-post-text">
+                    <span class="recent-heading"
+                      ><a href="" class="btn">Story name</a></span
                     >
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
                     tempora ex quam necessitatibus quis minus accusantium
@@ -173,13 +113,11 @@
                     expedita provident aperiam quo, fugiat voluptatum.
                     <span class="author">&mdash; Maria Cosovo</span>
                   </p>
-                </li>
-                <li class="most-read-post">
-                  <p class="most-read-post-text">
-                    <span class="mrp-heading"
-                      ><a href="" class="btn"
-                        >Story name (read more &rarr;)</a
-                      ></span
+                </div>
+                <div class="recent-post">
+                  <p class="recent-post-text">
+                    <span class="recent-heading"
+                      ><a href="" class="btn">Story name</a></span
                     >
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
                     tempora ex quam necessitatibus quis minus accusantium
@@ -187,13 +125,11 @@
                     expedita provident aperiam quo, fugiat voluptatum.
                     <span class="author">&mdash; Maria Cosovo</span>
                   </p>
-                </li>
-                <li class="most-read-post">
-                  <p class="most-read-post-text">
-                    <span class="mrp-heading"
-                      ><a href="" class="btn"
-                        >Story name (read more &rarr;)</a
-                      ></span
+                </div>
+                <div class="recent-post">
+                  <p class="recent-post-text">
+                    <span class="recent-heading"
+                      ><a href="" class="btn">Story name</a></span
                     >
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
                     tempora ex quam necessitatibus quis minus accusantium
@@ -201,13 +137,11 @@
                     expedita provident aperiam quo, fugiat voluptatum.
                     <span class="author">&mdash; Maria Cosovo</span>
                   </p>
-                </li>
-                <li class="most-read-post">
-                  <p class="most-read-post-text">
-                    <span class="mrp-heading"
-                      ><a href="" class="btn"
-                        >Story name (read more &rarr;)</a
-                      ></span
+                </div>
+                <div class="recent-post">
+                  <p class="recent-post-text">
+                    <span class="recent-heading"
+                      ><a href="" class="btn">Story name</a></span
                     >
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
                     tempora ex quam necessitatibus quis minus accusantium
@@ -215,13 +149,11 @@
                     expedita provident aperiam quo, fugiat voluptatum.
                     <span class="author">&mdash; Maria Cosovo</span>
                   </p>
-                </li>
-                <li class="most-read-post">
-                  <p class="most-read-post-text">
-                    <span class="mrp-heading"
-                      ><a href="" class="btn"
-                        >Story name (read more &rarr;)</a
-                      ></span
+                </div>
+                <div class="recent-post">
+                  <p class="recent-post-text">
+                    <span class="recent-heading"
+                      ><a href="" class="btn">Story name</a></span
                     >
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
                     tempora ex quam necessitatibus quis minus accusantium
@@ -229,84 +161,72 @@
                     expedita provident aperiam quo, fugiat voluptatum.
                     <span class="author">&mdash; Maria Cosovo</span>
                   </p>
-                </li>
-                <li class="most-read-post">
-                  <p class="most-read-post-text">
-                    <span class="mrp-heading"
-                      ><a href="" class="btn"
-                        >Story name (read more &rarr;)</a
-                      ></span
-                    >
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
-                    tempora ex quam necessitatibus quis minus accusantium
-                    facilis eaque? Et mollitia enim porro facere asperiores
-                    expedita provident aperiam quo, fugiat voluptatum.
-                    <span class="author">&mdash; Maria Cosovo</span>
-                  </p>
-                </li>
-                <li class="most-read-post">
-                  <p class="most-read-post-text">
-                    <span class="mrp-heading"
-                      ><a href="" class="btn"
-                        >Story name (read more &rarr;)</a
-                      ></span
-                    >
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
-                    tempora ex quam necessitatibus quis minus accusantium
-                    facilis eaque? Et mollitia enim porro facere asperiores
-                    expedita provident aperiam quo, fugiat voluptatum.
-                    <span class="author">&mdash; Maria Cosovo</span>
-                  </p>
-                </li>
-                <li class="most-read-post">
-                  <p class="most-read-post-text">
-                    <span class="mrp-heading"
-                      ><a href="" class="btn"
-                        >Story name (read more &rarr;)</a
-                      ></span
-                    >
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
-                    tempora ex quam necessitatibus quis minus accusantium
-                    facilis eaque? Et mollitia enim porro facere asperiores
-                    expedita provident aperiam quo, fugiat voluptatum.
-                    <span class="author">&mdash; Maria Cosovo</span>
-                  </p>
-                </li>
-                <li class="most-read-post">
-                  <p class="most-read-post-text">
-                    <span class="mrp-heading"
-                      ><a href="" class="btn"
-                        >Story name (read more &rarr;)</a
-                      ></span
-                    >
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
-                    tempora ex quam necessitatibus quis minus accusantium
-                    facilis eaque? Et mollitia enim porro facere asperiores
-                    expedita provident aperiam quo, fugiat voluptatum.
-                    <span class="author">&mdash; Maria Cosovo</span>
-                  </p>
-                </li>
-                <li class="most-read-post">
-                  <p class="most-read-post-text">
-                    <span class="mrp-heading"
-                      ><a href="" class="btn"
-                        >Story name (read more &rarr;)</a
-                      ></span
-                    >
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
-                    tempora ex quam necessitatibus quis minus accusantium
-                    facilis eaque? Et mollitia enim porro facere asperiores
-                    expedita provident aperiam quo, fugiat voluptatum.
-                    <span class="author">&mdash; Maria Cosovo</span>
-                  </p>
-                </li>
-              </ul>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
     </main>
 
-    <footer></footer>
+    <footer class="footer container">
+      <div class="grid grid--4-cols grid-footer grid--center-v">
+        <div class="logo-col">
+          <a href="#" class="footer-logo">
+            <img
+              class="logo"
+              src="img/kurasa_logo_full.png"
+              alt="Kurasa logo"
+            />
+          </a>
+        </div>
+        <div class="logo-col">
+          <ul class="social-links">
+            <li>
+              <a class="footer-link" href="#">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+            <li>
+              <a class="footer-link" href="#">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+            <li>
+              <a class="footer-link" href="#">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+          </ul>
+          <p class="copyright">
+            Copyright &copy; 2022 by Kurasa. All rights reserved
+          </p>
+        </div>
+        <nav class="nav-col">
+          <p class="footer-heading">Account</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">Create account</a></li>
+            <li><a class="footer-link" href="#">Sign in</a></li>
+            <li><a class="footer-link" href="#">iOS app</a></li>
+            <li><a class="footer-link" href="#">Android app</a></li>
+          </ul>
+        </nav>
+        <nav class="nav-col">
+          <p class="footer-heading">References</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">Privacy & terms</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>
